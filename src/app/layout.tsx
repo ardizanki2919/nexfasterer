@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { siteConfig } from "@/config/site.config";
-import { cn } from "@/lib/utils";
-import RootProviders from "@/components/providers";
+import { cn } from "~/lib/utils";
+import RootProviders from "~/components/providers";
 
 const fontSans = Geist({
   variable: "--font-geist-sans",
@@ -60,7 +60,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,12 +72,10 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
           fontHeading.variable,
-          fontMono.variable
+          fontMono.variable,
         )}
       >
-        <RootProviders>
-          {children}
-        </RootProviders>
+        <RootProviders>{children}</RootProviders>
       </body>
     </html>
   );

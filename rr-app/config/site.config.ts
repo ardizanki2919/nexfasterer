@@ -1,26 +1,21 @@
-import { SiteConfig } from "@/types";
+// TODO: Fix urls
 
-export const siteConfig: SiteConfig = {
-  name: "NexFaster",
-  title: "Next.js + React Router",
+export const siteConfig = {
+  name: "NexFasterer",
+  title: "React Router + React Router",
   description:
-    "A minimal template showcasing React Router integration within Next.js for client-side routing with clean documentation-style pages",
-  origin: "https://nexfaster.rdsx.dev",
+    'A minimal template showcasing React Router "SPA Mode" for client-side routing with clean documentation-style pages',
+  origin: "https://nexfasterer.rdsx.dev",
   keywords: [
     "React Router",
-    "Next.js",
     "Client-side routing",
     "React",
     "TypeScript",
     "Template",
   ],
-  og: "https://nexfaster.rdsx.dev/og.png",
-  creator: {
-    name: "rds_agi",
-    url: "https://rdsx.dev",
-  },
+  og: "https://nexfasterer.rdsx.dev/og.png",
   socials: {
-    github: "https://github.com/rudrodip/nexfaster",
+    github: "https://github.com/brookslybrand/nexfasterer",
     x: "https://x.com/rds_agi",
   },
 };
