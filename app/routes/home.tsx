@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
-import { siteConfig } from "~/config/site.config";
-import { Button } from "~/components/ui/button";
+import { siteConfig } from "@/config/site.config";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary border border-primary/20">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-              Next.js + React Router
+              React Router + React Router
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading tracking-tighter">
@@ -96,9 +96,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Lightning Fast Setup</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Zero-config React Router integration with Next.js. Get your
-                modern SPA running in under 60 seconds with our optimized
-                template.
+                Zero-config React Router. Get your modern SPA running in under
+                60 seconds with our optimized template.
               </p>
             </div>
           </div>
@@ -122,9 +121,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Seamless Client Routing</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Experience buttery-smooth navigation with client-side routing
-                while maintaining all the powerful features of Next.js
-                ecosystem.
+                Experience buttery-smooth navigation with client-side routing.
               </p>
             </div>
           </div>

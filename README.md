@@ -1,8 +1,8 @@
 # NexFaster
 
-A minimal template showcasing React Router integration within Next.js for client-side routing
+A minimal template showcasing React Router "SPA Mode" for client-side routing
 
-![nexfaster](./public/og.png)
+![nexfaster](./public/og.jpg)
 
 ## 🚀 Quick Start
 
@@ -17,27 +17,17 @@ Open [http://localhost:3000](http://localhost:3000) to see the app.
 
 ## 🏗️ Architecture
 
-NexFaster combines Next.js with React Router for pure client-side routing:
-
-1. **Route Redirection**: All routes redirect to `/shell` via `next.config.ts`
-2. **Shell Loading**: Shell page loads React Router app with `ssr: false`
-3. **Client Routing**: React Router handles all navigation client-side
+NexFaster uses React Router with [`ssr:false`](https://reactrouter.com/how-to/spa) for pure client-side routing:
 
 ## 📁 Key Files
 
-- `next.config.ts` - Route redirection configuration
-- `src/app/shell/page.tsx` - Loads React Router app
-- `src/frontend/app.tsx` - Main React Router application
-- `src/config/site.config.ts` - Site configuration
-- `src/components/boilerplate.tsx` - Layout and page components
+- `react-router.config.ts` - React Router configuration
+- `app/root.tsx` - Main React Router application
+- `app/config/site.config.ts` - Site configuration
 
 ## 🔧 Adding Routes
 
-Add new routes in `src/frontend/app.tsx`:
-
-```tsx
-<Route path="/your-page" element={<YourPage />} />
-```
+Add new routes in `app/routes.ts`:
 
 ## 🎨 Features
 
@@ -50,7 +40,7 @@ Add new routes in `src/frontend/app.tsx`:
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15
+- **Framework**: React Router 7
 - **Routing**: React Router 7
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
@@ -60,6 +50,7 @@ Add new routes in `src/frontend/app.tsx`:
 ## 📖 Usage Examples
 
 ### Multi-page App
+
 ```tsx
 <Route path="/products" element={<ProductList />} />
 <Route path="/products/:id" element={<ProductDetail />} />
@@ -67,21 +58,12 @@ Add new routes in `src/frontend/app.tsx`:
 ```
 
 ### Protected Routes
-```tsx
-<Route path="/dashboard" element={
-  <ProtectedRoute>
-    <Dashboard />
-  </ProtectedRoute>
-} />
-```
+
+Use [middleware](https://reactrouter.com/changelog#middleware-unstable)
 
 ### Nested Layouts
-```tsx
-<Route path="/admin" element={<AdminLayout />}>
-  <Route path="users" element={<UserManagement />} />
-  <Route path="settings" element={<Settings />} />
-</Route>
-```
+
+[docs](https://reactrouter.com/start/framework/routing#nested-routes)
 
 ## 🤝 Contributing
 
@@ -91,6 +73,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 BSD Zero Clause License - see [LICENSE](LICENSE) for details.
 
-## 👤 Author
+## 👤 Credit
 
-Created by [rds_agi](https://rdsx.dev) • [GitHub](https://github.com/rudrodip/nexfaster) • [Twitter](https://x.com/rds_agi)
+This was originally created by [rds_agi](https://rdsx.dev) • [GitHub](https://github.com/rudrodip/nexfaster) • [Twitter](https://x.com/rds_agi)
+
+This is just a fork showing how you can avoid Just Use React Router™

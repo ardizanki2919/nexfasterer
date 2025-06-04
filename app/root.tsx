@@ -1,33 +1,29 @@
 import {
   isRouteErrorResponse,
   Link,
-  Links,
-  Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "react-router";
 import { useEffect } from "react";
-import { Button } from "~/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
   CardFooter,
-} from "~/components/ui/card";
+} from "@/components/ui/card";
 import { NavLink } from "react-router";
-import ThemeToggler from "~/components/theme/toggler";
+import ThemeToggler from "@/components/theme/toggler";
 import { GithubIcon } from "lucide-react";
 
-import { Geist, Geist_Mono, Inter } from "next/font/google";
-
 import type { Route } from "./+types/root";
-import "~/styles/globals.css";
+import "@/styles/globals.css";
 
-import { siteConfig } from "~/config/site.config";
-import { cn } from "~/lib/utils";
-import RootProviders from "~/components/providers";
+import { siteConfig } from "@/config/site.config";
+import { cn } from "@/lib/utils";
+import RootProviders from "@/components/providers";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

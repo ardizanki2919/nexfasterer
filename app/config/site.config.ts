@@ -13,7 +13,7 @@ export const siteConfig = {
     "TypeScript",
     "Template",
   ],
-  og: "https://nexfasterer.rdsx.dev/og.png",
+  og: "https://nexfasterer.rdsx.dev/og.jpg",
   socials: {
     github: "https://github.com/brookslybrand/nexfasterer",
     x: "https://x.com/rds_agi",

@@ -6,5 +6,8 @@ export default {
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
   presets: [vercelPreset()],
-  appDirectory: "rr-app",
+  future: {
+    unstable_optimizeDeps: true,
+    unstable_splitRouteModules: "enforce",
+  },
 } satisfies Config;
