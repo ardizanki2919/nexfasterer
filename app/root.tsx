@@ -19,7 +19,7 @@ import ThemeToggler from "@/components/theme/toggler";
 import { GithubIcon } from "lucide-react";
 
 import type { Route } from "./+types/root";
-import "@/styles/globals.css";
+import styles from "@/styles/globals.css?url";
 
 import { siteConfig } from "@/config/site.config";
 import { cn } from "@/lib/utils";
@@ -31,6 +31,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href={styles} />
 
         <title>{siteConfig.title}</title>
         <meta name="description" content={siteConfig.description} />
