@@ -1,11 +1,9 @@
-// TODO: Fix urls
-
 export const siteConfig = {
   name: "NexFasterer",
   title: "React Router + React Router",
   description:
     'A minimal template showcasing React Router "SPA Mode" for client-side routing with clean documentation-style pages',
-  origin: "https://nexfasterer.rdsx.dev",
+  origin: "https://nexfasterer.vercel.app",
   keywords: [
     "React Router",
     "Client-side routing",
@@ -13,9 +11,9 @@ export const siteConfig = {
     "TypeScript",
     "Template",
   ],
-  og: "https://nexfasterer.rdsx.dev/og.jpg",
+  og: "https://nexfasterer.vercel.app/og.jpg",
   socials: {
     github: "https://github.com/brookslybrand/nexfasterer",
-    x: "https://x.com/rds_agi",
+    x: "https://x.com/brookslybrand",
   },
 };
